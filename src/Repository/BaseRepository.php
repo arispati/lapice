@@ -40,4 +40,60 @@ abstract class BaseRepository
     {
         return $this->model()->getQuery();
     }
+
+    /**
+     * Save a new model and return the instance.
+     *
+     * @param array $attributes
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function create(array $attributes)
+    {
+        return $this->model()->create($attributes);
+    }
+
+    /**
+     * Find a model by its primary key.
+     *
+     * @param mixed $id
+     * @param array $columns
+     * @return \Illuminate\Database\Eloquent\Model|null
+     */
+    public function find($id, array $columns = ['*'])
+    {
+        return $this->model()->find($id, $columns);
+    }
+
+    /**
+     * Update the model in the database.
+     *
+     * @param \Illuminate\Database\Eloquent\Model|int|string $model
+     * @param array $attributes
+     * @return bool
+     * @throws \Exception
+     */
+    public function update($model, array $attributes)
+    {
+        if ($model instanceof Model) {
+            return $model->update($attributes);
+        }
+
+        return $this->find($model)->update($attributes);
+    }
+
+    /**
+     * Delete the model from the database.
+     *
+     * @param \Illuminate\Database\Eloquent\Model|int|string $model
+     * @return bool|null
+     * @throws \Exception
+     */
+    public function delete($model)
+    {
+        if ($model instanceof Model) {
+            return $model->delete();
+        }
+
+        return $this->find($model)->delete();
+    }
 }
