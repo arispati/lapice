@@ -3,7 +3,7 @@ Laravel library to use repository and service pattern
 
 ## Navigation
 - [Home](https://github.com/arispati/lapice)
-- [Available Methods](https://github.com/arispati/lapice/wiki/methods.md)
+- [Available Methods](/wiki/methods.md)
 
 ## Usage
 #### Repository Usage

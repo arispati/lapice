@@ -69,5 +69,5 @@ class ExampleService
 ```
 
 ### Wiki
-- [Usage](https://github.com/arispati/lapice/wiki/usage.md)
-- [Available Methods](https://github.com/arispati/lapice/wiki/methods.md)
+- [Usage](wiki/usage.md)
+- [Available Methods](wiki/methods.md)

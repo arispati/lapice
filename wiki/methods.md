@@ -3,7 +3,7 @@ Laravel library to use repository and service pattern
 
 ## Navigation
 - [Home](https://github.com/arispati/lapice)
-- [Usage](https://github.com/arispati/lapice/wiki/usage.md)
+- [Usage](/wiki/usage.md)
 
 ## Available Methods
 - `create(array $attributes)`
