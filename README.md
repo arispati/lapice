@@ -24,7 +24,7 @@ composer require arispati/lapice
 ```bash
 php artisan lapice:repository ExampleRepository
 ```
-It will genarate `app/Repositories/ExampleRepository.php` file
+It will generate `app/Repositories/ExampleRepository.php` file
 ```php
 <?php
 
@@ -50,7 +50,7 @@ class ExampleRepository extends BaseRepository
 ```bash
 php artisan lapice:service ExampleService
 ```
-It will genarate `app/Services/ExampleService.php` file
+It will generate `app/Services/ExampleService.php` file
 ```php
 <?php
 
