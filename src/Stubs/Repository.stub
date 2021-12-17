@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use Arispati\Lapice\Repository\BaseRepository;
+
+class DummyClass extends BaseRepository
+{
+    /**
+     * Set the model class
+     *
+     * @return string
+     */
+    protected function setModel(): string
+    {
+        // return Model::class;
+    }
+}

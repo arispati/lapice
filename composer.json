@@ -1,0 +1,39 @@
+{
+    "name": "arispati/lapice",
+    "description": "Laravel library to use repository and service pattern",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Arispati\\Lapice\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhamad Aris",
+            "email": "masarispati@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/arispati/lapice",
+    "keywords": [
+        "laravel",
+        "repository",
+        "service",
+        "pattern"
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": ">=5.6",
+        "illuminate/console": ">=5.6",
+        "illuminate/database": ">=5.6",
+        "illuminate/filesystem": ">=5.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arispati\\Lapice\\Providers\\LapiceServiceProvider"
+            ]
+        }
+    }
+}
