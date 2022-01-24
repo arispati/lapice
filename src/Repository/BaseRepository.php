@@ -38,7 +38,7 @@ abstract class BaseRepository
      */
     protected function query()
     {
-        return $this->model()->getQuery();
+        return $this->model()->newQuery()->getQuery();
     }
 
     /**
